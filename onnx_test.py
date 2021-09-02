@@ -3,7 +3,7 @@ from tensorflow.keras.preprocessing import image
 #from tensorflow.keras.applications.resnet_v2 import preprocess_input, decode_predictions
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
 import numpy as np
-import time
+import time #accuracy dependent on platform, tested on Linux
 
 model = 'mobilenetv2.onnx'
 sess = rt.InferenceSession(model)
